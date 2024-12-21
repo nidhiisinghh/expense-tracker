@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <button id="addExpenseBtn" class="btn-primary">Add Expense</button>
+        </header>
+        <main>
+            <section class="expense-summary">
+                <h2>Total Balance: ₹<span id="totalBalance">0</span></h2>
+            </section>
+
+            <section class="expense-list">
+                <h3>Expense List:</h3>
+                <ul id="expenseList">
+                </ul>
+            </section>
+            <section class="upi-payment">
+                <h3>Make a Payment via UPI</h3>
+                <input type="text" id="upiId" placeholder="Enter UPI ID" />
+                <button id="generateQRCodeBtn" class="btn-primary">Generate QR Code</button>
+                <div id="qrCodeContainer"></div>
+            </section>
+        </main>
+    </div>
+    <div id="expenseModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Expense</h2>
+            <form id="expenseForm">
+                <label for="expenseTitle">Title:</label>
+                <input type="text" id="expenseTitle" required />
+                
+                <label for="expenseAmount">Amount:</label>
+                <input type="number" id="expenseAmount" required />
+                
+                <label for="expenseCategory">Category:</label>
+                <input type="text" id="expenseCategory" required />
+                
+                <button type="submit" class="btn-primary">Add Expense</button>
+                <button type="button" id="closeModalBtn" class="btn-secondary">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

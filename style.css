@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #3E5879;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2e2e2e;
+}
+
+header .btn-primary {
+    padding: 10px 20px;
+    background-color: #213555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+header .btn-primary:hover {
+    background-color: #3E5879;
+}
+
+.expense-summary {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.expense-summary h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.expense-list {
+    margin-bottom: 20px;
+}
+
+.expense-list h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.expense-list ul {
+    list-style-type: none;
+}
+
+.expense-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-list li span {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.upi-payment {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.upi-payment input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.upi-payment button {
+    padding: 10px 20px;
+    background-color: #213555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.upi-payment button:hover {
+    background-color: #3E5879;
+}
+
+#qrCodeContainer {
+    margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.modal-content button {
+    margin-top: 20px;
+}
+
+#expenseForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#expenseForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
